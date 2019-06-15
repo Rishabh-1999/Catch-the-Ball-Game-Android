@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GAME OVER"
+        android:text="@string/game_over"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -20,20 +20,21 @@
         android:id="@+id/scoreLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00"
-        android:textSize="80dp" />
+        android:text="@string/_00"
+        android:textSize="80sp" />
 
     <TextView
         android:id="@+id/highScoreLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="High Score : 00"
+        android:text="@string/high_score"
         android:textSize="20sp"
         android:layout_marginTop="80dp"/>
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:contentDescription="@string/restart"
         android:layout_marginTop="50dp"
         android:src="@drawable/retry"
         android:textAllCaps="false"

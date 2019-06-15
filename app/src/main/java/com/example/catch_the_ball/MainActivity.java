@@ -124,16 +124,6 @@ public class MainActivity extends AppCompatActivity {
         black.setY(blackY);
         black.setX(blackX);
 
-        boxSpeed=Math.round(screenHeight/60F);
-        orangeSpeed=Math.round(screenWidth/60F);
-        pinkSpeed=Math.round(screenWidth/36F);
-        blackSpeed=Math.round(screenWidth/ 45F);
-
-        Log.v("SPEED_BOX : ",boxSpeed+"");
-        Log.v("SPEED_PINK : ",pinkSpeed+"");
-        Log.v("SPEED_ORANGE : ",orangeSpeed+"");
-        Log.v("SPEED_BLACK : ",blackSpeed+"");
-
         //pink
         pinkX -=pinkSpeed;
         if( pinkX<0) {
@@ -142,6 +132,17 @@ public class MainActivity extends AppCompatActivity {
         }
         pink.setY(pinkY);
         pink.setX(pinkX);
+
+        boxSpeed=Math.round(screenHeight/60F);
+        orangeSpeed=Math.round(screenWidth/60F);
+        pinkSpeed=Math.round(screenWidth/36F);
+        blackSpeed=Math.round(screenWidth/ 45F);
+
+
+        Log.v("SPEED_BOX : ",boxSpeed+"");
+        Log.v("SPEED_PINK : ",pinkSpeed+"");
+        Log.v("SPEED_ORANGE : ",orangeSpeed+"");
+        Log.v("SPEED_BLACK : ",blackSpeed+"");
 
         //Move Box
         if(action_flag==true) {
@@ -292,6 +293,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
             }
         }
+
         return super.dispatchKeyEvent(event);
     }
 }

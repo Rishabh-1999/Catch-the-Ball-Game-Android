@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Catch-the-Ball</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="_00">00</string>
+    <string name="high_score">High Score : 00</string>
+    <string name="restart">restart</string>
+    <string name="catch_the_ball">Catch the Ball</string>
+    <string name="play">PLAY</string>
+    <string name="_10_point">10 Point</string>
+    <string name="_30_point">30 Point</string>
 </resources>
