@@ -9,9 +9,9 @@
         android:roundIcon="@drawable/up"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".resultActivity"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".startActivity">
+        <activity android:name=".resultActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".startActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

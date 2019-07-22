@@ -21,7 +21,6 @@ public class resultActivity extends AppCompatActivity {
         TextView scoreLabel=(TextView)findViewById(R.id.scoreLabel);
         TextView highScoreLabel=(TextView)findViewById(R.id.highScoreLabel);
 
-
         int score=getIntent().getIntExtra("SCORE",0);
         scoreLabel.setText(score+"");
 
@@ -30,7 +29,6 @@ public class resultActivity extends AppCompatActivity {
 
         if(score > highscore) {
             highScoreLabel.setText("High Score : "+score);
-
             //save
             SharedPreferences.Editor editor=settings.edit();
             editor.putInt("HIGH_SCORE",score);
@@ -40,13 +38,15 @@ public class resultActivity extends AppCompatActivity {
             highScoreLabel.setText("High Score : "+highscore);
         }
     }
+
     public void tryAgain(View view) {
-        startActivity(new Intent(getApplicationContext(),startActivity.class));
+        Intent intent=new Intent(getApplicationContext(),startActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
-
         if(event.getAction()==KeyEvent.ACTION_DOWN) {
             switch (event.getKeyCode()){
                 case KeyEvent.KEYCODE_BACK:
