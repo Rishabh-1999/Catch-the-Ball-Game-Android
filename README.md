@@ -1,9 +1,9 @@
 # Catch-the-Ball
-Catch the Ball game Implemented in Android using JAVA.
+Catch the Ball game implemented for Android using JAVA.
+**Note: It does not use any dependencies.**
 
 Pre-requisites
 --------------
-
 - Android SDK v28
 - Min. Android SDK v16
 
@@ -13,7 +13,6 @@ Features
 - Open Source
 - Developer Friendly
 - Enjoy Game
-
 
 Extra Dependencies
 ------------------
@@ -32,3 +31,5 @@ Preview
     </td>
   </tr>
 </table>
+
+<h2>Enjoy!!!</h2>
